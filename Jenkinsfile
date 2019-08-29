@@ -7,8 +7,7 @@ pipeline {
         steps {
             echo 'Static Code Check...'
             sh '''
-              cp index.html /home/ubuntu/lintcheck
-              cd /home/ubuntu/lintcheck
+              cd /home/ubuntu/
               tidy -q -e *.html
             '''
         }
