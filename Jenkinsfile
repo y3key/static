@@ -6,10 +6,7 @@ pipeline {
     stage('Lint HTML') {
         steps {
             echo 'Static Code Check...'
-            sh '''
-              cd /home/ubuntu/
-              tidy -q -e *.html
-            '''
+            sh 'tidy -q -e *.html'
         }
     }
     
